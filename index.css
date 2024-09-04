@@ -1,0 +1,70 @@
+/* Sayfamızdaki bütün elemanların sınırlarını görebilmek için geçici bir çizgi ekleyebiliriz. Bunu proje sonunda silebilirsiniz. */
+* {
+  border: 1px solid purple;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 750px;
+}
+
+/* css-1 tüm linkler için altçizgiyi kaldıralım, metin rengini mavi yerine siyah yapalım, üzerine gelince mavi olmasını sağlayalım. */
+.menu-items a {
+  text-decoration: none;
+  color: black;
+}
+.menu-items a:hover {
+  color: blue;
+}
+
+/* css-2 header'da flex özelliklerini kullanarak item'ların alt alta görünmesini, cross-axis'de ortada olmasını ve aralarında 30px olmasını sağlayalım.  */
+header {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav button {
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* css-2 menu-items class'ında flex özellikleri ile button'un yazılar ile hizalı olmasını sağlayalım. */
+.menu-items {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+
+  align-items: center;
+}
+
+.social-items {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}
+
+/* css-2 main-container flex özelliklerini kullanarak içindeki item'ların aşağıda, ortada olmasını ve metinlerin ortalı olmasını sağlayalım.*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+  aspect-ratio: 4/3;
+  background: gray;
+  padding: 50px;
+  max-width: 750px;
+}
